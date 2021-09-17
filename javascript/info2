@@ -1,0 +1,179 @@
+Ways of writing Javascript in HTML
+
+1. internal script
+    head or body
+
+    <script>
+        //code of javascript
+    </script>
+
+2. external script
+
+    create html page
+    create javascript page with .js 
+    use script tag as follows :
+        <script src="filename.js"></script>
+
+-----------------------------------------------------------
+body - document
+
+document.write("------------")
+console.log("-------")
+-----------------------------------------------------------
+
+variables in Javascript
+
+full_name="sunayana"
+age = 28
+
+1.  using var 
+
+var  variable_name=value;
+
+2.  using let
+
+let  variable_name=value;
+
+3. variable_name=value;
+
+-----------------------------------------------------
+
+Operators in Javascript
+
+1. Arithmetic operators :-  +  -  *  /  %
+2. Increment(++) - Decrement(--) operators :- ++   ,   --
+3. Relational Operators :-  <  ,  <=  ,  >  ,  >=  ,  ==  ,  !=
+4. Conditional Operators :-  && - AND ,  ||-OR
+5. Ternary Operators :- (condition)? TRUE : FALSE;
+
+------------------------------------------------------
+
+Datatypes
+Number
+1. integer :-  only numbers:-  10 ,  99, 7895313164
+            parseInt()
+2. float :-  numbers with decimal point :  3.14  ,  56.239
+            parseFloat()
+String : collection of characters : alphabets , digits ,symbols
+
+    "10" + "20" = 1020
+    10 + 20 = 30
+
+------------------------------------------------------
+
+Control Strcutures
+
+1. if statement
+    a) if-else
+        if(condition)
+        {
+            //code
+        }
+        else
+        {
+            //code
+        }
+
+    b) if-else-if OR  if-else ladder
+        if(condition)
+        {
+            //code
+        }
+        else if(condition)
+        {
+            //code
+        }
+        else if(condition)
+        {
+            //code
+        }
+        else if(condition)
+        {
+            //code
+        }
+        else
+        {
+            //code
+        }
+
+    c) switch case
+        switch(choice_variable)
+        {
+            case 1:
+                //code
+            break;
+
+            case 2:
+                //code
+            break;
+
+            case 3:
+                //code
+            break;
+            ..
+            ..
+            ..
+
+            default:
+                //code
+        }
+
+        3) loops
+            a) while loops
+                variable initilization;
+                while(condition)
+                {
+                    //code
+                    ++/--
+                }
+            b) do - while loop
+                variable initilization;
+                do
+                {
+                    //code
+                    ++/--
+                }
+                while(condition);
+            c) for loop
+                for(variable initilization;condition;++/--)
+
+------------------------------------------------------------
+            ()
+Functions :- block of code that performs specific task
+
+syntax:
+    function definition :
+    function  function_name(parameter_list)
+    {
+        //code
+    }
+
+
+function call - function_name(parameter_list)
+
+scenario 1
+            shopping        discount
+cust1       2               35%
+
+cust2       1               -
+
+cust3       7               30% + coupan
+
+--------------------------------------------
+
+Array in js :-  []
+collection of different types of values
+
+months = 12
+days = 7
+colors = red , green , blue ,....
+
+---------------------------------------------------
+
+DOM Elelemnts
+    DOM : Document Object Model
+
+    1. by ID
+    2. by Tag Name
+    3. by class Name
+    4. by Name

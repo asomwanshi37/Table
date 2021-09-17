@@ -1,0 +1,72 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Image Change</title>
+<style>
+#s
+{
+	width: 200px;
+	/*padding: 20x;*/
+}
+
+</style>
+</head>
+
+<body>
+	
+	<select id="s" onChange="test(this.value)">
+		<option value ="0">Select Country</option>
+		<option value ="1">India</option>
+		<option value ="2">Afganistan</option>
+		<option value ="3">Singapore</option>
+		<option value ="4">South Korea</option>
+		<option value ="5">Malaysia</option>
+		<option value ="6">Bhutan</option>
+	</select>
+	<p id="v1"></p>
+
+<img id ="ind">
+<img id ="afg">	
+<img id ="bhu">
+<img id ="mal">
+<img id ="sin">
+<img id ="sko">
+<script>
+	
+function test(val)		//val=3
+	{
+	document.getElementById("v1").innerHTML="Selected List Option";
+		
+		
+		if(val==1)
+			{
+
+				document.getElementById("ind").src="India.png"
+
+			}
+		if(val==2)
+			{
+				document.getElementById("ind").src="Afghanistan.png"
+
+			}
+		if(val==3)
+			{
+				document.getElementById("ind").src="Bhutan.png"
+		
+             }
+		if(val==4)
+			{
+				document.getElementById("mal").src="Malaysia.png"	
+			}
+		if(val==5)
+			{
+				document.getElementById("sin").src="Singapore.png"	
+			}
+		if(val==6)
+			{
+				document.getElementById("sko").src="South Korea.png"	
+			}
+	}
+	</script>				
+</body>
+</html>

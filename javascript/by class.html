@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>By Name</title>
+</head>
+<body>
+    <form action="#" name="myform">
+        <label>Enter Name :</label>
+        <input type="text" name="nm">
+        <br><br>
+        <input type="submit" onclick="display()">
+    </form>
+
+    <script>
+        function display()
+        {
+            nm = document.myform.nm.value
+            alert("Hi "+nm)
+        }
+    </script>
+</body>
+</html>

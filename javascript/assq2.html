@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<body>
+    <script>
+        bs = parseFloat(prompt("Enter basic salary = "))
+        HRA = (7/100)*bs
+        console.log("HRA = "+HRA)
+        TA = (5/100)*bs
+        console.log("TA = "+TA)
+        DA = (2/100)*bs
+        console.log("DA = "+DA)
+        PF = 300
+        net = (bs + HRA + DA + TA) - PF
+        console.log("Net Salary = "+net)
+    </script>
+</body>
+</html>

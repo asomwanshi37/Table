@@ -1,0 +1,33 @@
+<html>
+<body>
+<script>  
+function validateemail()  
+{  
+
+	// x = sunayana.3ri@gmail
+	
+   var x=document.myform.email.value; 
+   var atposition=x.indexOf("@");  //12		
+   var dotposition=x.lastIndexOf("."); // 8
+   
+	//	12<1 -> f	||  8<(12+2) -> T				||8+2>=17 -> f
+   if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length)
+   {  
+     alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+	 document.getElementById("i").src="cross.png"
+     return false;  
+   } 
+
+	document.getElementById("i").src="check.png"
+}  
+</script>  
+<body>  
+<form name="myform"  method="post" action="welcome.html"
+ onsubmit="return validateemail();">  
+Email:
+ <input type="text" name="email"><img id="i"><br/>  <br/>  
+  
+<input type="submit" value="register">  
+</form>  
+</body>
+</html>

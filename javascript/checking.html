@@ -1,0 +1,80 @@
+<html>
+<head>
+<script>	
+	function valid()
+	{
+		var nm = document.myform.nm.value;
+		var ph = document.myform.ph.value;
+		
+		if(nm == '')
+		{
+			alert("Name cannot be empty")
+			return false;
+		}
+		else 
+		{
+			var flag=1;
+			for(i=0;i<nm.length;i++)
+			{
+				if(!(nm[i]>='A' && nm[i]<='Z' || nm[i]>='a' && nm[i]<='z' || nm[i]==' '))
+				{
+					flag=0;
+					break;
+				}
+			}
+			if(flag==0)
+			{
+				alert('Alphabets only')
+				return false;
+			}
+		}
+	
+		if(ph=='')
+		{
+			alert("Phone number cannot be empty")
+			return false;
+		}
+		else if(ph.length != 10)
+		{
+			alert('Phone numbers should be 10 digit only')
+			return false;
+		}
+		else 
+		{
+			var flag=1;
+			for(i=0;i<ph.length;i++)
+			{
+				if(!(ph[i]>='0' && ph[i]<='9'))
+				{
+					flag=0;
+					break;
+				}
+			}
+			if(flag==0)
+			{
+				alert('Numbers only')
+				return false;
+			}
+		}
+		return true;
+}
+</script>
+</head>
+<body>
+<form name="myform" action="code.js">
+<table border="2" cellspacing="0" cellpadding="10" width="50%">
+<tr>
+    <td>Name</td>
+    <td><input type="text" name="nm" placeholder="Enter name here"></td>
+</tr>
+<tr>
+    <td>Phone No</td>
+    <td><input type="text" name="ph" placeholder="Enter numbers here"></td>
+</tr>
+<tr>
+    <td colspan="2" align="center"><input type="submit" value="check" onclick="return valid()"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

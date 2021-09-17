@@ -1,0 +1,49 @@
+CSS - Cascading Style Sheet
+
+HTML - tags :-  <html></html>
+css - tags are called as Selectors
+
+writing css Selectors
+
+Selector_name
+{
+    property_name: value;
+    property_name: value;
+    property_name: value;
+    .
+    .
+    .
+}
+------------------------------------------------
+1. Types of CSS
+    a) Inline CSS :- In opening tag <style="">
+    b) Internal or Embedded CSS :-  
+            <head>
+                <title></title>
+                <style>
+                    / css Properties /
+                </style>
+            </head>
+
+    c) External CSS
+        -> create html webpage
+        -> create css page
+        ->using <link> attach css in html
+-----------------------------------------------------------
+
+HTML Tags               Properties of CSS
+bgcolor                 background-color
+<font color="">         color
+<font size="1-7">       font-size
+<font face="">          font-family
+align                   text-align
+
+-----------------------------------------------------------
+2. Types of Selectors
+
+1. tag name
+2. id :-  #
+3. class :- .
+4. universal :- *
+5. grouping
+6. descendant

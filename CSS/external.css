@@ -1,0 +1,19 @@
+h1
+{
+    background-color: pink;
+    color:navy;
+    font-family:Viner Hand ITC;
+}
+
+p
+{
+    font-size: 30px;
+    text-align: right;
+    color: red;
+}
+
+div
+{
+    font-size: 60px;
+    color: gray;
+}
